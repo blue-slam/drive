@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node pkg="motors" type="motor_controller" name="motor_controller" respawn="true" output="screen">
+        <param name="motor_config_path" value="$(find motors)/params/motor_config.yaml" />
+    </node>
+</launch>

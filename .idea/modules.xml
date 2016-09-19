@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../lowlevel/.idea/lowlevel.iml" filepath="$PROJECT_DIR$/../lowlevel/.idea/lowlevel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/motors.iml" filepath="$PROJECT_DIR$/.idea/motors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../platform/.idea/platform.iml" filepath="$PROJECT_DIR$/../platform/.idea/platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../range/.idea/range.iml" filepath="$PROJECT_DIR$/../range/.idea/range.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../teleop/.idea/teleop.iml" filepath="$PROJECT_DIR$/../teleop/.idea/teleop.iml" />
+    </modules>
+  </component>
+</project>
