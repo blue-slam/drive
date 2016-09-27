@@ -1,7 +1,0 @@
-lowlevel_name: robot
-drive_rate: 50
-drive_controller:
-  kp: 0.1
-  ki: 0.00
-  kd: 0.00
-

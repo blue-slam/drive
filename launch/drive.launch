@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node pkg="motors" type="drive_controller" name="drive_controller" respawn="true" output="screen">
+        <param name="drive_config_path" value="$(find motors)/params/drive_config.yaml" />
+    </node>
+</launch>

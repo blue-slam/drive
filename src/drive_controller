@@ -8,18 +8,18 @@ from controller import TwistController
 if __name__ == "__main__":
     controller = None
     try:
-        rospy.init_node('motor_controller')
+        rospy.init_node('drive_controller')
 
         params = None
-        param_path = rospy.get_param('~motor_config_path')
+        param_path = rospy.get_param('~drive_config_path')
         with open(param_path, 'r') as f:
             params = yaml.load(f.read())
-        rospy.set_param('motors', params)
+        rospy.set_param('drive', params)
 
         controller = TwistController(params)
-        rate = rospy.Rate(params['drive_rate'])
+        rate = rospy.Rate(params['update_rate'])
         while not rospy.is_shutdown():
-            controller.drive()
+            controller.update()
             rate.sleep()
 
     except rospy.ROSInterruptException:
