@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 
 <launch>
-    <node pkg="motors" type="drive_controller" name="drive_controller" respawn="true" output="screen">
-        <param name="drive_config_path" value="$(find motors)/params/drive_config.yaml" />
+    <arg name="machine"/>
+    <node pkg="drive" type="drive_controller" name="drive_controller" machine="$(arg machine)" respawn="true" output="screen">
+        <remap from="/joint_cmds" to="/commands/motors"/>
+        <remap from="/joint_states" to="/states/motors"/>
+        <param name="robot_name" value="$(env ROBOT)"/>
+        <rosparam command="load" file="$(find drive)/params/drive_config.yaml"/>
     </node>
 </launch>

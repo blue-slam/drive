@@ -1,3 +1,2 @@
-robot_name: 'BlueSlam'
 update_rate: 50
-
+drive_timeout: 1.0
